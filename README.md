@@ -9,48 +9,48 @@ This is the official repository of paper "Weakly Supervised Monocular Fisheye Ca
 ```
 WoodScape_ICCV19
 └───rgb_images
+│   │   00000_[CAM].png
 │   │   00001_[CAM].png
-│   │   00002_[CAM].png
 |   |   ...
-│   │
+│   │   10223_[CAM].png
 └───previous_images
+│   │   00000_[CAM]_prev.png
 │   │   00001_[CAM]_prev.png
-│   │   00002_[CAM]_prev.png
 |   |   ...
-│   │
+│   │   10223_[CAM]_prev.png
 └───segment_annotations
         │   instance
+        │   │   00000_[CAM].png
         │   │   00001_[CAM].png
-        │   │   00002_[CAM].png
         |   |   ...
         │   semantic
+        │   │   00000_[CAM].png
         │   │   00001_[CAM].png
-        │   │   00002_[CAM].png
         |   |   ...
 │   │
 └───vehicle_data
         │   previous_images
+        │   │   00000_[CAM].png
         │   │   00001_[CAM].png
-        │   │   00002_[CAM].png
         |   |   ...
         │   rgb_images
+        │   │   00000_[CAM].png
         │   │   00001_[CAM].png
-        │   │   00002_[CAM].png
         |   |   ...
 │   │
 └───flow_annotations_flowformersintel
         │   gtLabels
+        │   │   00000_[CAM].flo
         │   │   00001_[CAM].flo
-        │   │   00002_[CAM].flo
         |   |   ...
         │   rgbLabels
+        │   │   00000_[CAM].png
         │   │   00001_[CAM].png
-        │   │   00002_[CAM].png
         |   |   ...
 │   │
 └───calibration_data
+│   │   00000_[CAM].json
 │   │   00001_[CAM].json
-│   │   00002_[CAM].json
 |   |   ...
 │   │
 └───masks
