@@ -3,8 +3,11 @@ This is the official repository of paper "Weakly Supervised Monocular Fisheye Ca
 ## Methodology
 ![pipeline](https://github.com/user-attachments/assets/8ed8ba2c-97f2-454b-9cbd-a062589f9110)
 ## Dataset preparing
-1.[WoodScape](https://woodscape.valeo.com/woodscape/)
-[SynWoodScape](https://drive.google.com/drive/folders/1N5rrySiw1uh9kLeBuOblMbXJ09YsqO7I)
+1. Download the [WoodScape](https://woodscape.valeo.com/woodscape/) dataset and place it in the main directory.
+2. Run ./data/WoodScape/generate_instance.py to generate semantic and instance labels.
+3. Use the [FlowFormer](https://github.com/drinkingcoder/FlowFormer-Official) code and refer to ./data/SynWoodScape/inverse_flow.py to generate optical flow labels for the WoodScape dataset.
+4. Download the [SynWoodScape](https://drive.google.com/drive/folders/1N5rrySiw1uh9kLeBuOblMbXJ09YsqO7I) dataset.
+5. Run the scripts in ./data/SynWoodScape to supplement the data into the WoodScape dataset.
 ## Data organization
 ```
 WoodScape_ICCV19
