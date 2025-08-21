@@ -64,6 +64,7 @@ WoodScape_ICCV19
 │   │
 ```
 ## Usage
+Our trained models can be downloaded from [link](https://drive.google.com/drive/folders/1v2yEKWAhjRFxy8hA73R85G5f530M_7zx?usp=sharing). `models15` refers to the training results on WoodScape only, while `models17` refers to the training results on the merged WoodScape and SynWoodScape dataset. 
 Qualitative evaluation of distance estimation：
 ```
 python qualitative_distance.py
