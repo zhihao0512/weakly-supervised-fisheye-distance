@@ -2,7 +2,7 @@
 This is the official repository of paper "Weakly Supervised Monocular Fisheye Camera Distance Estimation with Segmentation Constraints". Electronics, 2025. This code is based on [WoodScape](https://github.com/valeoai/WoodScape/tree/master), with modifications.
 ## Methodology
 ![pipeline](https://github.com/user-attachments/assets/8ed8ba2c-97f2-454b-9cbd-a062589f9110)
-## Dataset preparing
+## Dataset preparation
 1. Download the [WoodScape](https://woodscape.valeo.com/woodscape/) dataset and place it in the main directory.
 2. Run ./data/WoodScape/generate_instance.py to generate semantic and instance labels.
 3. Use the [FlowFormer](https://github.com/drinkingcoder/FlowFormer-Official) code and refer to ./data/SynWoodScape/inverse_flow.py to generate optical flow labels for the WoodScape dataset.
@@ -62,4 +62,17 @@ WoodScape_ICCV19
 │   │   08234_FV.npy
 |   |   ...
 │   │
+```
+## Usage
+Qualitative evaluation of distance estimation：
+```
+python qualitative_distance.py
+```
+Quantitative evaluation of distance estimation：
+```
+python quantitative_distance.py
+```
+Train the model:
+```
+python main.py
 ```
